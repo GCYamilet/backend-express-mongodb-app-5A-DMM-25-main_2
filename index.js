@@ -27,7 +27,7 @@ app.get('/', (req, res) => {
 app.use('/api/users', userRoute);
 
 // Realizar petición de conexión a mongodb
-mongoose.connect('mongodb://localhost:27017/MyDatabase')
+mongoose.connect('mongodb+srv://2311080390:6JvceS4pN76UyDgv@cluster0.cvvlj.mongodb.net/mydatabase')
 .then( () => {
     console.log('Se estableció la conexión a base de datos exitosamente');
     app.listen( 3000, () => {
